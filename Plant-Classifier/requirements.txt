@@ -1,0 +1,28 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+gunicorn==21.2.0
+torch==2.2.0
+torchvision==0.17.0
+numpy<2
+pillow==10.1.0
+python-multipart
+pydantic>=2.5.0
+joblib
+
+# LLM and Agent packages
+openai>=1.0.0
+tiktoken
+langchain>=0.3.0
+langchain-openai>=0.2.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langgraph>=0.2.0
+tavily-python
+loguru
+python-dotenv
+
+# RAG packages
+lancedb==0.8.2
+sentence-transformers
+beautifulsoup4
+ragas
