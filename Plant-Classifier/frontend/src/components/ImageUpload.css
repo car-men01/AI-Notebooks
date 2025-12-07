@@ -1,0 +1,153 @@
+.upload-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.upload-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.upload-card h2 {
+  color: #2e7d32;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.drop-zone {
+  border: 3px dashed #ccc;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fafafa;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop-zone:hover {
+  border-color: #2e7d32;
+  background: #f1f8f4;
+}
+
+.drop-zone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.upload-icon {
+  font-size: 4rem;
+}
+
+.drop-zone p {
+  color: #666;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.file-types {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.selected-file {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f1f8f4;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.selected-file span:first-child {
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.mode-selector {
+  margin: 2rem 0;
+}
+
+.mode-selector h3 {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.mode-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.mode-option {
+  display: block;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.mode-option:hover {
+  border-color: #2e7d32;
+  background: #f1f8f4;
+}
+
+.mode-option.selected {
+  border-color: #2e7d32;
+  background: #f1f8f4;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.2);
+}
+
+.mode-option input[type="radio"] {
+  display: none;
+}
+
+.mode-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.mode-content strong {
+  color: #333;
+  font-size: 1rem;
+}
+
+.mode-content span {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .upload-card {
+    padding: 1.5rem;
+  }
+
+  .drop-zone {
+    padding: 2rem 1rem;
+    min-height: 250px;
+  }
+
+  .mode-options {
+    grid-template-columns: 1fr;
+  }
+}

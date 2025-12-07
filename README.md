@@ -72,14 +72,78 @@ Advanced deep learning assignment focusing on image classification model benchma
 - Model testing and evaluation
 - Performance comparison across different architectures
 
+### [A10: Transfer Learning - EfficientNet Plant Classification](A10/Assignment10.ipynb)
+Applied transfer learning techniques using pre-trained EfficientNet-B0 model for plant species classification. Key components:
+- Fine-tuning pre-trained EfficientNet architecture
+- Advanced image preprocessing and augmentation
+- Model optimization for plant classification
+- Saving trained models and preprocessing parameters
+- Inference on test images
+- Performance evaluation and visualization
+
+### [A11: LLMs, Prompt Engineering & Agents - Plant Classifier Enhancement](A11/Assignment10&11.ipynb)
+Enhanced the plant classification system with Large Language Models and intelligent agents. Explored:
+- LangChain framework integration
+- OpenAI GPT models for plant information generation
+- Prompt engineering for structured outputs
+- Retrieval Augmented Generation (RAG) with FAISS vector stores
+- Web search integration using Tavily
+- Agent-based information retrieval
+- Combining multiple AI techniques for comprehensive plant care recommendations
+
+## Projects
+
+### [Plant-Classifier: Full-Stack Plant Classification Application](Plant-Classifier/)
+A production-ready web application that combines deep learning, RAG, and LLM agents to provide comprehensive plant identification and care recommendations. Features include:
+
+**Backend (FastAPI)**
+- EfficientNet-B0 model for plant image classification
+- Multiple inference endpoints (basic prediction, RAG-enhanced, LLM-powered)
+- Integration with OpenAI GPT for plant care card generation
+- RAG system using FAISS vector store for grounded information
+- Web search agent using Tavily for real-time plant data
+- RESTful API with automatic documentation (Swagger/OpenAPI)
+- Health checks and error handling
+
+**Frontend (React)**
+- Modern, responsive UI for plant image upload
+- Real-time classification results
+- Display of detailed plant care recommendations
+- Integration with multiple backend endpoints
+
+**Deployment**
+- Docker containerization with multi-stage builds
+- Docker Compose for orchestration
+- Nginx for frontend serving and API proxy
+- Environment variable configuration
+- Health checks and automatic restarts
+
+**Technologies**: PyTorch, FastAPI, React, LangChain, FAISS, OpenAI API, Tavily API, Docker, Nginx
+
+**How to Run**:
+- **Locally**: Use `start_backend.ps1` and `start_frontend.ps1` scripts
+- **Docker**: Run `docker-compose up --build -d` from the Plant-Classifier directory
+- **Access**: Frontend at http://localhost, Backend API at http://localhost:8080/docs
+
 ## Technologies Used
 - **Python Libraries**: Pandas, NumPy, Matplotlib, Seaborn
 - **Machine Learning**: scikit-learn
-- **Deep Learning**: PyTorch, PyTorch Lightning
+- **Deep Learning**: PyTorch, PyTorch Lightning, EfficientNet
+- **LLM & AI Agents**: LangChain, OpenAI API, Tavily API, FAISS
+- **Web Development**: FastAPI, React, Nginx
+- **Deployment**: Docker, Docker Compose
 - **Tools**: Jupyter Notebooks, Kaggle datasets
 
 ## Project Structure
-Each assignment folder (A1-A9) contains:
+Each assignment folder (A1-A11) contains:
 - Jupyter notebook with implementation and analysis
 - Relevant datasets (CSV files or data directories)
 - Supporting files and caches where applicable
+
+The Plant-Classifier project includes:
+- Complete full-stack application structure
+- Backend API with multiple endpoints
+- React frontend application
+- Docker configuration files
+- Model files and vector stores
+- Comprehensive documentation
