@@ -1,7 +1,9 @@
 # .gitignore for Plant Classifier API
 
-# Environment variables
+# Environment variables (CRITICAL - contains API keys)
 .env
+.env.local
+.env.*.local
 
 # Python
 __pycache__/
@@ -47,3 +49,50 @@ htmlcov/
 
 # Logs
 *.log
+
+# Model files (large binary files)
+*.pt
+*.pth
+*.h5
+*.ckpt
+model/*.pt
+model/*.joblib
+
+# Vector store (large files, can be regenerated)
+backend/resources/vector_store/
+resources/vector_store/
+
+# Node modules (frontend)
+node_modules/
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.env.local
+
+# Docker
+*.tar
+docker-compose.override.yml
+
+# Dataset files (too large for git)
+*.csv
+*.zip
+archive/
+test_images/
+A9/archive/
+A10/archive/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Cache files
+*.cache
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
